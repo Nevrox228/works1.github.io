@@ -1,1 +1,0 @@
-# komputer-od.github.io

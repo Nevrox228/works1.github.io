@@ -1,0 +1,423 @@
+.btn {
+	padding: 13px 	0px;	
+	width: 180px;
+	height: 50px;
+	color: #000;
+	background: #FF6B00;
+	text-align: center;	
+	font-size: 20px;
+	display: block;
+}
+
+
+
+body {
+	font-family: 'Montserrat', medium;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	color: #000;
+	height: 100%;				
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+	text-decoration: none;	  
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;	
+}
+
+a {
+	color: #000;
+}
+
+/*.container {
+	width: 100%;
+	max-width: 1170px;
+	height: 100%;
+	margin: 0 auto;	
+}*/
+
+.header1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1vh;		
+}
+
+
+.header1_content {
+	display: flex;
+    align-items: center;
+}
+	
+
+.nav {
+	width: 60%;
+}
+
+.menu {
+	display: flex;	
+	justify-content: space-between;	
+	color: #000;
+}
+
+.menu  li{	
+	display: flex;	
+	/*padding-right: 1vh;	*/
+}
+
+.menu  li a {	
+	color: #000;
+		
+}
+
+.contact {	
+	text-align: center;
+	width: 40%;
+}
+
+.tel a {
+	color: #000;
+}
+
+.adress {
+	padding-top: 1vh;
+}
+
+
+.header_logo {
+	display: flex;
+	justify-content: center;
+}
+
+.header_logo_1 {
+	width: 55%;
+}
+
+
+.logo {
+	display: flex;
+	align-items: center;	
+}
+
+
+.logo p {	
+	width: 25%;
+}
+
+.komputer {
+	background: url("../img/background.WebP") no-repeat center / cover;
+	height: 40vh;
+	padding-top: 20vh;	
+}
+
+.komputer h1 {
+	font-size: 65px;
+	color: #fff;
+	width: 100%;
+}
+
+.komputer p {
+	font-size: 24px;
+	color: #fff;
+	width: 100%;
+	padding-bottom: 2vh;
+}
+
+.services h2 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.services1 {
+	display: flex;
+	justify-content: space-between;	
+	text-align: center;	
+}
+
+.services1 p {
+	width: 100%;
+	text-align: center;
+}
+
+.repair {
+	background: url("../img/photo1.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;	
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.repair:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+.simple-repair {
+	background: url("../img/photo2.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.simple-repair:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+.cartridge {
+	background: url("../img/photo3.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;	
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.cartridge:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+/****/
+
+.services2 {
+	display: flex;
+	justify-content: space-between;	
+	text-align: center;	
+	padding-top: 2vh;
+}
+
+.product {
+	background: url("../img/photo4.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;	
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.product:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+.kopicentr {
+	background: url("../img/photo5.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;	
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.kopicentr:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+
+.accessories {
+	background: url("../img/photo6.png") no-repeat center / cover;
+	width: 32%;
+	height: 210px;
+	color: #fff;
+	font-size: 25px;	
+	align-items: center;
+	display: flex;
+	transition: 1s;
+}
+
+.accessories:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */    
+}
+
+
+/****/
+
+.plus h3 {
+	padding-top: 5vh;
+	padding-bottom: 8vh;
+	font-size: 45px;
+}
+
+.plus {
+	padding-bottom: 5vh;	
+}
+
+.plus1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.mainplus1 {
+	font-size: 45px;
+	text-align: center;		
+}
+
+.plus2 {	
+	text-align: center;
+} 
+
+.plus2 h4 {
+	font-size: 94px;
+	text-align: center;
+}
+
+.plus2 p {
+	font-size: 25px;
+}
+
+.plus3 {	
+	text-align: center;
+} 
+
+.plus3 h4 {
+	font-size: 94px;
+	text-align: center;
+}
+
+.plus3 p {
+	font-size: 25px;
+}
+
+.plus4 {	
+	text-align: center;
+} 
+
+.plus4 h4 {
+	font-size: 94px;
+	text-align: center;
+}
+
+.plus4 p {
+	font-size: 25px;
+}
+
+.plus5 {	
+	text-align: center;
+} 
+
+.plus5 h4 {
+	font-size: 94px;
+	text-align: center;
+}
+
+.plus5 p {
+	font-size: 25px;
+}
+
+.recommendation {
+	padding: 5vh;
+}
+
+.recommendation h5 {
+	font-size: 40px;
+	text-align: center;
+}
+
+.recommendation h6 {
+	font-size: 25px;
+}
+
+.recommendation p {
+	font-size: 17px;
+}
+
+.allrecommendation1 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 70px;
+}
+
+.allrecommendation2 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 70px;
+}
+
+
+.recommendation_1 {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	
+}
+
+.recommendation1_txt {
+	margin-left: 30px;
+}
+
+.recommendation_2 {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+.recommendation_3 {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+.recommendation_4 {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+.map p {
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.footerall {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo_3 {
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+
+.contact_1 {
+	width: 30%;
+	text-align: center;
+}
+
+.tel_1 a {
+	color: #000;
+}
+
+.adress_1 {
+	margin-top: 10px;
+}
+
+

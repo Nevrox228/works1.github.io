@@ -1,11 +1,12 @@
 .btn {
-	padding: 20px 35px;	
+	padding: 13px 	0px;	
 	width: 180px;
-	height: 40px;
+	height: 50px;
 	color: #000;
 	background: #FF6B00;
 	text-align: center;	
 	font-size: 20px;
+	display: block;
 }
 
 
@@ -40,31 +41,40 @@ a {
 	color: #000;
 }
 
-.container {
+/*.container {
 	width: 100%;
 	max-width: 1170px;
 	height: 100%;
 	margin: 0 auto;	
-}
+}*/
 
 .header1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding-top: 1vh;		
 }
 
+
+.header1_content {
+	display: flex;
+    align-items: center;
+}
+	
+
+.nav {
+	width: 60%;
+}
+
 .menu {
 	display: flex;	
-	justify-content: space-between;
-	width: 40%;
+	justify-content: space-between;	
 	color: #000;
-
 }
 
 .menu  li{	
 	display: flex;	
-	padding-right: 2vh;	
+	/*padding-right: 1vh;	*/
 }
 
 .menu  li a {	
@@ -74,7 +84,7 @@ a {
 
 .contact {	
 	text-align: center;
-	width: 30%;
+	width: 40%;
 }
 
 .tel a {
@@ -82,13 +92,28 @@ a {
 }
 
 .adress {
-	padding-top: 10px;
+	padding-top: 1vh;
 }
+
+
+.header_logo {
+	display: flex;
+	justify-content: center;
+}
+
+.header_logo_1 {
+	width: 55%;
+}
+
 
 .logo {
 	display: flex;
-	align-items: center;
-	width: 40%;
+	align-items: center;	
+}
+
+
+.logo p {	
+	width: 25%;
 }
 
 .komputer {
@@ -123,6 +148,11 @@ a {
 	text-align: center;	
 }
 
+.services1 p {
+	width: 100%;
+	text-align: center;
+}
+
 .repair {
 	background: url("../img/photo1.png") no-repeat center / cover;
 	width: 32%;
@@ -135,7 +165,7 @@ a {
 }
 
 .repair:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
 .simple-repair {
@@ -150,7 +180,7 @@ a {
 }
 
 .simple-repair:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
 .cartridge {
@@ -165,7 +195,7 @@ a {
 }
 
 .cartridge:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
 /****/
@@ -189,7 +219,7 @@ a {
 }
 
 .product:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
 .kopicentr {
@@ -204,13 +234,9 @@ a {
 }
 
 .kopicentr:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
-.kopicentr p {
-	text-align: center;
-	width: 100%;
-}
 
 .accessories {
 	background: url("../img/photo6.png") no-repeat center / cover;
@@ -224,12 +250,7 @@ a {
 }
 
 .accessories:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */    
-}
-
-.accessories p {
-	text-align: center;
-	width: 100%;
+    transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
 

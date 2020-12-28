@@ -71,6 +71,12 @@ a {
 .menu {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.menu li {
+	padding-right: 1vh;
+	/*flex-wrap: wrap;*/
 }
 
 .contact {
@@ -86,12 +92,18 @@ a {
 	padding-top: 2vh;
 }
 
-.header_logo_1 {
-	width: 80%;
+.header_logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
-.logo {
-	width: 54%;
+.header_logo_1 {
+	width: 80%;
+	display: flex;
+}
+
+.logo {	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -133,8 +145,12 @@ a {
 
 /**********/
 
+
+.services {
+	height: 75vh;
+}
 .all_services {
-	height: 48vh;
+	
 	align-items: center;
 }
 
@@ -293,6 +309,7 @@ a {
 
 .plus_all {
 	width: 100%;
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 }

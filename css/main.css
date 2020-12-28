@@ -42,7 +42,7 @@ a {
 }
 
 .container {
-	width: 100%;
+	/*width: 100%;*/
 	/*max-width: 1170px;*/
 	height: 100%;
 	/*margin: 0 auto;	*/
@@ -147,10 +147,9 @@ a {
 
 
 .services {
-	height: 75vh;
+	height: 55vh;
 }
-.all_services {
-	
+.all_services {	
 	align-items: center;
 }
 
@@ -307,9 +306,14 @@ a {
 
 /****/
 
+.plus {
+	/*height: 50vh;*/
+	padding-bottom: 5vh;
+	padding-top: 5vh;
+}
+
 .plus_all {
-	width: 100%;
-	height: 50vh;
+	width: 100%;	
 	display: flex;
 	justify-content: center;
 }
@@ -321,9 +325,7 @@ a {
 	font-size: 45px;
 }
 
-.plus {
-	padding-bottom: 5vh;	
-}
+
 
 .plus_1 {
 	width: 80%;
@@ -404,14 +406,14 @@ a {
 
 .allrecommendation1 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-top: 70px;
 	width: 80%;
 }
 
 .allrecommendation2 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-top: 70px;
 	width: 80%;
 }

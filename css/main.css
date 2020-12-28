@@ -41,98 +41,122 @@ a {
 	color: #000;
 }
 
-/*.container {
+.container {
 	width: 100%;
-	max-width: 1170px;
+	/*max-width: 1170px;*/
 	height: 100%;
-	margin: 0 auto;	
-}*/
+	/*margin: 0 auto;	*/
+}
 
 .header1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 1vh;		
+	padding-top: 1vh;
+	width: 100%;		
 }
-
 
 .header1_content {
+	width: 80%;
+	justify-content: space-between;
 	display: flex;
-    align-items: center;
+	align-items: center;
+	height: 10vh;
 }
-	
 
 .nav {
-	width: 60%;
+	width: 50%;
 }
 
 .menu {
-	display: flex;	
-	justify-content: space-between;	
-	color: #000;
+	display: flex;
+	justify-content: space-between;
 }
 
-.menu  li{	
-	display: flex;	
-	/*padding-right: 1vh;	*/
+.contact {
+	width: 25%;
+	text-align: center;	
 }
 
-.menu  li a {	
-	color: #000;
-		
-}
-
-.contact {	
-	text-align: center;
-	width: 40%;
-}
-
-.tel a {
-	color: #000;
+.tel {
+	line-height: 3vh;
 }
 
 .adress {
-	padding-top: 1vh;
-}
-
-
-.header_logo {
-	display: flex;
-	justify-content: center;
+	padding-top: 2vh;
 }
 
 .header_logo_1 {
-	width: 55%;
+	width: 80%;
 }
-
 
 .logo {
+	width: 54%;
 	display: flex;
-	align-items: center;	
+	align-items: center;
+	justify-content: center;
 }
 
 
-.logo p {	
-	width: 25%;
-}
+
+/**********/
+
 
 .komputer {
-	background: url("../img/background.WebP") no-repeat center / cover;
-	height: 40vh;
-	padding-top: 20vh;	
+	background: url("../img/background.WebP") no-repeat center / cover;	
 }
+
+.intro_content {
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro {
+	width: 80%;
+}
+
 
 .komputer h1 {
 	font-size: 65px;
-	color: #fff;
-	width: 100%;
+	color: #fff;	
 }
 
 .komputer p {
 	font-size: 24px;
-	color: #fff;
-	width: 100%;
+	color: #fff;	
 	padding-bottom: 2vh;
+}
+
+
+/**********/
+
+.all_services {
+	height: 48vh;
+	align-items: center;
+}
+
+.all_services_1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.services1 {
+	width: 80%;
+}
+
+.all_services_2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.services2 {
+	width: 80%;
+	text-align: center;
 }
 
 .services h2 {
@@ -222,6 +246,10 @@ a {
     transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
+.product p {
+	width: 100%;
+}
+
 .kopicentr {
 	background: url("../img/photo5.png") no-repeat center / cover;
 	width: 32%;
@@ -237,6 +265,9 @@ a {
     transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
+.kopicentr p {
+	width: 100%;
+}
 
 .accessories {
 	background: url("../img/photo6.png") no-repeat center / cover;
@@ -253,8 +284,19 @@ a {
     transform: scale(1.1); /* Увеличиваем масштаб */    
 }
 
+.accessories p {
+	width: 100%;
+}
+
 
 /****/
+
+.plus_all {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 
 .plus h3 {
 	padding-top: 5vh;
@@ -266,9 +308,15 @@ a {
 	padding-bottom: 5vh;	
 }
 
-.plus1 {
+.plus_1 {
+	width: 80%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.plus span {
+	color: #004E1F;
+	font-size: 18px;
 }
 
 
@@ -278,60 +326,50 @@ a {
 	text-align: center;		
 }
 
-.plus2 {	
-	text-align: center;
-} 
-
-.plus2 h4 {
+.plus_1 h4 {	
 	font-size: 94px;
 	text-align: center;
-}
+}  
 
-.plus2 p {
+.plus_1 p {	
 	font-size: 25px;
 }
+
+.plus2 {	
+	text-align: center;
+	width: 20%;
+} 
+
 
 .plus3 {	
 	text-align: center;
+	width: 20%;
 } 
 
-.plus3 h4 {
-	font-size: 94px;
-	text-align: center;
-}
-
-.plus3 p {
-	font-size: 25px;
-}
 
 .plus4 {	
 	text-align: center;
+	width: 20%;
 } 
 
-.plus4 h4 {
-	font-size: 94px;
-	text-align: center;
-}
-
-.plus4 p {
-	font-size: 25px;
-}
 
 .plus5 {	
 	text-align: center;
+	width: 20%;
 } 
 
-.plus5 h4 {
-	font-size: 94px;
-	text-align: center;
+/******/
+
+._1allrecommendation1 {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-.plus5 p {
-	font-size: 25px;
-}
-
-.recommendation {
-	padding: 5vh;
+._2allrecommendation2 {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
 .recommendation h5 {
@@ -349,21 +387,23 @@ a {
 
 .allrecommendation1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-top: 70px;
+	width: 80%;
 }
 
 .allrecommendation2 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-top: 70px;
+	width: 80%;
 }
 
 
 .recommendation_1 {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 40%;
 	
 }
 
@@ -374,19 +414,19 @@ a {
 .recommendation_2 {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 40%;
 }
 
 .recommendation_3 {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 40%;
 }
 
 .recommendation_4 {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 40%;
 }
 
 .map p {
@@ -395,20 +435,30 @@ a {
 	text-align: center;
 }
 
+/********/
+
+._1footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
 .footerall {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 80%;
 }
 
 .logo_3 {
 	display: flex;
 	align-items: center;
-	width: 40%;
+	width: 30%;
 }
 
 .contact_1 {
-	width: 30%;
+	width: 25%;
 	text-align: center;
 }
 

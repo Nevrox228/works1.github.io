@@ -45,6 +45,9 @@ a {
 	.footerall {
 		width: 90% !important;
 	}
+	.plus_1 {
+		width: 90% !important;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -85,6 +88,27 @@ a {
 	.footerall {
 		width: 90% !important;
 	}
+	.allrecommendation1 {
+		width: 90% !important;
+		justify-content: space-between !important;
+	}
+	.allrecommendation2 {
+		width: 90% !important;
+		justify-content: space-between !important;
+	}
+	.recommendation_1 {
+		width: 45% !important;
+	}
+	.recommendation_2 {
+		width: 45% !important;
+	}
+	.recommendation_3 {
+		width: 45% !important;
+	}
+	.recommendation_4 {
+		width: 45% !important;
+	}
+
 
 
 }

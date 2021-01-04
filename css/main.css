@@ -191,7 +191,13 @@ a {
 
 @media screen and (max-width: 575px) {
 	.header_logo_1 {
-		width: 100%;
+		width: 100% !important;
+	}
+	.nav {
+		display: none;
+	}
+	.contact {
+		width: 100% !important;
 	}
 	.logo {
 		flex-wrap: wrap;

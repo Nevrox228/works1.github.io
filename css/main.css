@@ -88,12 +88,13 @@ a {
 	.footerall {
 		width: 90% !important;
 	}
-	.allrecommendation1 {
-		width: 90% !important;
+	.recommendation h5 {
+		font-size: 35px !important;
+	}
+	.allrecommendation1 {		
 		justify-content: space-between !important;
 	}
-	.allrecommendation2 {
-		width: 90% !important;
+	.allrecommendation2 {		
 		justify-content: space-between !important;
 	}
 	.recommendation_1 {
@@ -108,18 +109,95 @@ a {
 	.recommendation_4 {
 		width: 45% !important;
 	}
+	.recommendation1_txt h6 {
+		font-size: 20px !important;
+	}
+	.mainplus1 {
+		font-size: 40px !important;
+	}
 
 
 
 }
 
 @media screen and (max-width: 767px) {
+	.intro {
+		text-align: center !important;
+	}
+	.intro h1 {
+		font-size: 40px !important;
+	}
+	.intro p {
+		font-size: 20px !important;
+	}
+	.btn_1 {
+		padding-left: 8vh;
+	}
+	.services h2 {
+		font-size: 40px !important;
+	}
+	.services1 {
+		width: 90% !important;
+	}
+	.repair {
+		width: 100% !important;
+	}
+	.simple-repair {
+		width: 100% !important
+	}
+	.cartridge {
+		width: 100% !important;
+		padding: 1vh;
+	}
+	.product {
+		width: 100% !important;
+		padding: 1vh;
+	}
+	.kopicentr {
+		width: 100% !important;
+		padding: 1vh;
+	}
+	.accessories {
+		width: 100% !important;
+		padding: 1vh;
+	}
+	.plus2 {
+		width: 51% !important;
+	}
+	.plus3 {
+		width: 51% !important;
+	}
+	.plus4 {
+		width: 51% !important;
+	}
+	.plus5 {
+		width: 51% !important;
+	}
+	.recommendation_1 {
+		width: 100% !important;
+		padding-bottom: 2vh;
+	}
+	.recommendation_2 {
+		width: 100% !important;
+		padding-bottom: 2vh;
+	}
+	.recommendation_3 {
+		width: 100% !important;
+		padding-bottom: 2vh;
+	}
+	.recommendation_4 {
+		width: 100% !important;
+		padding-bottom: 2vh;
+	}
+}
+
+@media screen and (max-width: 575px) {
 	
 }
 
+
 .container {
-	/*width: 100%;*/
-	/*max-width: 1170px;*/
+	
 	height: 100%;
 	margin: 0 auto;	
 	
@@ -188,6 +266,9 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+	.logo_txt {
+		padding-left: 2vh;
+	}
 
 
 
@@ -386,10 +467,8 @@ a {
 
 /****/
 
-.plus {
-	/*height: 50vh;*/
-	padding-bottom: 5vh;
-	padding-top: 5vh;
+.plus {	
+	padding-bottom: 5vh;	
 }
 
 .plus_all {
@@ -488,15 +567,17 @@ a {
 .allrecommendation1 {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 70px;
-	width: 80%;
+	padding-top: 50px;
+	width: 80%; 
+	flex-wrap: wrap;
 }
 
 .allrecommendation2 {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 70px;
+	padding-top: 10px;
 	width: 80%;
+	flex-wrap: wrap;
 }
 
 
@@ -507,8 +588,7 @@ a {
 	
 }
 
-.recommendation1_txt {
-	margin-left: 10px;
+.recommendation1_txt {	
 	text-align: center;
 }
 

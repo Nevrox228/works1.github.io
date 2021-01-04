@@ -115,9 +115,6 @@ a {
 	.mainplus1 {
 		font-size: 40px !important;
 	}
-
-
-
 }
 
 @media screen and (max-width: 767px) {
@@ -192,7 +189,43 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-	
+	.header_logo_1 {
+		width: 100%;
+	}
+	.logo {
+		flex-wrap: wrap;
+	}
+	.logo_3 {
+		flex-wrap: wrap !important;
+		justify-content: center;
+	}
+	.logo_txt {
+		text-align: center;
+	}
+	.services h2 {
+		font-size: 35px !important;
+	}
+	.mainplus1 {
+		font-size: 30px !important;
+	}
+	.recommendation h5 {
+		font-size: 30px !important;
+	}
+	.contact_1 {
+		width: 99% !important;
+	}
+	.plus2 {
+		width: 100% !important;
+	}
+	.plus3 {
+		width: 100% !important;
+	}
+	.plus4 {
+		width: 100% !important;
+	}
+	.plus5 {
+		width: 100% !important;
+	}
 }
 
 
@@ -264,10 +297,11 @@ a {
 .logo {	
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;	
 }
 	.logo_txt {
 		padding-left: 2vh;
+		font-weight: 700;		
 	}
 
 
@@ -479,8 +513,8 @@ a {
 
 
 .plus h3 {
-	padding-top: 5vh;
-	padding-bottom: 8vh;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
 	font-size: 45px;
 }
 
@@ -630,6 +664,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	width: 80%;
+	flex-wrap: wrap;
 }
 
 .logo_3 {

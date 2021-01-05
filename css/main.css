@@ -81,7 +81,7 @@ a {
 }
 
 .contact {
-	width: 25%;
+	width: 35%;
 	text-align: center;	
 }
 
@@ -203,13 +203,14 @@ a {
 .repair {
 	background: url("../img/photo1.png") no-repeat center / cover;
 	width: 32.5%;
-	height: 210px;
+	height: 20vh;
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .repair:hover {
@@ -219,13 +220,14 @@ a {
 .simple-repair {
 	background: url("../img/photo2.png") no-repeat center / cover;
 	width: 32.5%;
-	height: 210px;
+	height: 20vh;	
 	color: #fff;
 	font-size: 25px;
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .simple-repair:hover {
@@ -234,14 +236,15 @@ a {
 
 .cartridge {
 	background: url("../img/photo3.png") no-repeat center / cover;
-	width: 32.5%;
-	height: 210px;
+	width: 32.5%;	
+	height: 20vh;
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .cartridge:hover {
@@ -250,14 +253,15 @@ a {
 
 .product {
 	background: url("../img/photo4.png") no-repeat center / cover;
-	width: 32.5%;
-	height: 210px;
+	width: 32.5%;	
+	height: 20vh;
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .product:hover {
@@ -270,14 +274,15 @@ a {
 
 .kopicentr {
 	background: url("../img/photo5.png") no-repeat center / cover;
-	width: 32.5%;
-	height: 210px;
+	width: 32.5%;	
+	height: 20vh;
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .kopicentr:hover {
@@ -291,13 +296,14 @@ a {
 .accessories {
 	background: url("../img/photo6.png") no-repeat center / cover;
 	width: 32.5%;
-	height: 210px;
+	height: 20vh;	
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
 	transition: 1s;
 	margin-bottom: 1vh;
+	transition: all 0.5s ease;
 }
 
 .accessories:hover {

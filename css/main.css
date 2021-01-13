@@ -207,10 +207,10 @@ a {
 	color: #fff;
 	font-size: 25px;	
 	align-items: center;
-	display: flex;
-	transition: 1s;
+	display: flex;	
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 }
 
 .repair:hover {
@@ -225,7 +225,7 @@ a {
 	font-size: 25px;
 	align-items: center;
 	display: flex;
-	transition: 1s;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
 }
@@ -242,7 +242,7 @@ a {
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
-	transition: 1s;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
 }
@@ -259,7 +259,7 @@ a {
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
-	transition: 1s;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
 }
@@ -280,7 +280,7 @@ a {
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
-	transition: 1s;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
 }
@@ -301,7 +301,7 @@ a {
 	font-size: 25px;	
 	align-items: center;
 	display: flex;
-	transition: 1s;
+	box-shadow: 1px 1px 6px -6px rgb(0 0 0);
 	margin-bottom: 1vh;
 	transition: all 0.5s ease;
 }
@@ -460,7 +460,7 @@ a {
 	width: 40%;
 }
 
-.map p {
+.map h6 {
 	font-size: 35px;
 	font-weight: 700;
 	text-align: center;

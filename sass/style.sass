@@ -1,0 +1,144 @@
+*
+	margin: 0
+	padding: 0
+
+.header	
+	background: url(../img/bg/bg.png)
+	min-height: 700px
+	position: relative
+	&_top
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_list
+	ul
+		display: flex
+		padding-top: 20px
+		li
+			padding-right: 30px
+			list-style-type: none
+			a
+				color: #fff	
+				font-weight: 300
+				letter-spacing: 0.065em
+				font-size: 20px
+								
+	&_map
+		text-align: center
+		color: #fff
+		font-size: 15px
+		font-weight: 400
+		letter-spacing: 0.065em
+.bottom		
+	position: relative
+	&_title
+		color: #fff
+		font-weight: bold
+		font-size: 110px
+		letter-spacing: 0.15em
+		padding-top: 60px
+	&_subheader
+		float: right
+		color: #fff
+		font-weight: 300
+		font-size: 20px
+		letter-spacing: 0.05em
+	&_descr
+		position: absolute
+		bottom: 70px
+		color: #fff
+		font-size: 20px
+		text-align: center
+		left: 50%
+		width: 100%
+		transform: translateX(-50%)
+		&::after				
+			content: ""
+			background: url(../img/icons/1.png) center (center/cover) no-repeat
+			height: 17px
+			width: 8px
+			display: block
+			margin: 0 auto
+			margin-top: 10px
+
+.services
+	padding: 20px 0 50px 0
+	&_title
+		text-align: center
+		font-weight: 500
+		font-size: 64px
+		color: #000
+	&_item
+		text-align: center
+		padding-top: 37px
+	&_round
+		display: flex
+		justify-content: center		
+	&_icon
+		border: solid #c8c8c8 5px
+		width: 200px
+		height: 200px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 100px
+		transition: 0.6s all	 	
+		&:hover
+			background: #c8c8c8			
+	&_descr
+		font-weight: 500
+		font-size: 26px	
+.contact
+	margin-bottom: 45px
+	&_title
+		font-size: 50px
+		text-align: center
+		color: #000
+		font-weight: 500
+		margin: 10px 0 45px 0
+	&_wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&_tel		
+		font-weight: 500
+		font-size: 24px
+	&_btn	
+		background: #474747
+		width: 222px
+		height: 49px		
+		border: 0
+		list-style-type: none
+		border-radius: 15px	
+		margin-top: 15px	
+		a	
+			display: block
+			font-size: 16px
+			text-align: center
+			align-items: center
+			color: #fff
+			text-decoration: none
+
+			
+
+.footer	
+	background: #000
+	
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_list
+		ul
+			display: flex
+		li
+			padding-right: 30px
+			list-style-type: none
+			a
+				color: #fff	
+				font-weight: 300
+				letter-spacing: 0.065em
+				font-size: 20px
+	&_adress
+		color: #fff	
+		text-align: center		

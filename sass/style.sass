@@ -215,7 +215,9 @@
 
 @media ( max-width:575px)
 	.header
-		min-height: 600px		
+		min-height: 600px	
+		&_top
+			flex-direction: column	
 		&_list 
 			display: none
 		&_img
@@ -225,7 +227,10 @@
 		.bottom 
 			width: 300px	
 			&_title 
-				font-size: 45px		
+				font-size: 45px	
+				margin-bottom: 0
+			&_subheader 
+				font-size: 17px		
 			&_descr 
 				font-size: 14px	
 	.services

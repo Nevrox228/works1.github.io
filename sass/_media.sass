@@ -1,37 +1,86 @@
 @media (max-width:1025px)
-	.header
-		&_list
-			ul
-				li
-					a
-						font-size: 20px
-		&_map
-			font-size: 18px				
+	.header		
+		&_addres
+			font-size: 18px	
+	.list
+		ul
+			li
+				a
+					font-size: 20px					
 @media (max-width:991px)
-	.header
-		&_list
-			ul
-				li
-					a
-						font-size: 17px
-		&_map
+	.header		
+		&_addres
 			font-size: 15px
+	.list
+		ul
+			li
+				a
+					font-size: 17px		
 
-@media (max-width:767px)
+@media (max-width: 767px)	
 	.header
 		min-height: 630px
-		&_list 
-				display: none
+		&_top 
+			padding-top: 25px
+		&_list 			
+			display: none
+			
 		&_img
 			img
 				width: 100px
 				margin-right: 10px
-		&_map
+		&_adress
 			font-size: 18px		
 		.bottom 
 			width: 500px	
 			&_title 
 				font-size: 80px	
+	.menu 
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100%
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .9)
+		transition: 0.6s all
+		z-index: 5
+		&_active
+			left: 0
+		&_item 
+			padding-right: 0
+			border: none
+			margin: 10px 0		
+
+	.hamburger 
+		display: block
+		position: fixed
+		right: 25px
+		top: 5%
+		transform: translateY(-50%)
+		width: 30px
+		height: 12px
+		z-index: 10
+		span 
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #000
+			margin-bottom: 4px
+			transition: 0.5s all
+		&_active
+			span
+				background-color: black
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
 	.services
 		&_link
 			img
@@ -54,10 +103,15 @@
 			display: none	
 
 @media ( max-width:575px)
+	.menu 
+		width: 60%		
 	.header
 		min-height: 550px	
-		&_top
-			flex-direction: column	
+		ul				
+			li 
+				padding-right: 0
+		&_top			
+			justify-content: space-around	
 		&_list 
 			display: none
 		&_img
@@ -66,7 +120,7 @@
 				margin-right: 0
 				margin: 0 auto
 				display: block
-		&_map
+		&_adress
 			font-size: 16px		
 		.bottom 
 			width: 280px	

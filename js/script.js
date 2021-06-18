@@ -1,24 +1,28 @@
-$(document).ready(function(){
-    new WOW().init();
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeElem = document.querySelector('.menu__close');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
 });
 
-const time = 1000;  //ms
-const step = 10;
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
 
-function outNum(num, elem) {
-    let l = document.querySelector('#' + elem);
-    n = 0;
-    let t = Math.round(time / (num / step));
-    let interval = setInterval(() => {
-        n = n + step;
-        if (n == num) {
-            clearInterval(interval);
-        }
-        l.innerHTML = n;
-    },    
-        t);
-}
+// const txt = document.querySelectorAll('.procent__txt'),
+//     line = document.querySelectorAll('.procent__line span');
 
-outNum(200, 'numb');
+// txt.forEach( (item, i) => {
+//     line[i].style.width = item.innerHTML;
+// });
 
-// outNum(190, 'descr');
+
+
+
+// const counters = document.querySelectorAll('.skills__ratings-counter'),
+//       line = document.querySelectorAll('.skills__ratings-line span');
+
+// counters.forEach( (item, i) => {
+//     line[i].style.width = item.innerHTML;
+// });

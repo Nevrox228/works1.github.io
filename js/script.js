@@ -1,28 +1,35 @@
+$(document).ready(function(){
+    new WOW().init();
+});
+
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+      menu = document.querySelector('.menu');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
-});
-
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
-
-// const txt = document.querySelectorAll('.procent__txt'),
-//     line = document.querySelectorAll('.procent__line span');
-
-// txt.forEach( (item, i) => {
-//     line[i].style.width = item.innerHTML;
-// });
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger__active');
+        menu.classList.toggle('menu__active');
+    });
 
 
 
 
-// const counters = document.querySelectorAll('.skills__ratings-counter'),
-//       line = document.querySelectorAll('.skills__ratings-line span');
+// const time = 1000;  //ms
+// const step = 10;
 
-// counters.forEach( (item, i) => {
-//     line[i].style.width = item.innerHTML;
-// });
+// function outNum(num, elem) {
+//     let l = document.querySelector('#' + elem);
+//     n = 0;
+//     let t = Math.round(time / (num / step));
+//     let interval = setInterval(() => {
+//         n = n + step;
+//         if (n == num) {
+//             clearInterval(interval);
+//         }
+//         l.innerHTML = n;
+//     },    
+//         t);
+// }
+
+// outNum(200, 'numb');
+
+// outNum(190, 'descr');

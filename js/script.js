@@ -21,16 +21,51 @@ button__mini.addEventListener('click', () => {
 
 closeElem__mini.addEventListener('click', () => {
 	info__mini.classList.remove('info__mini__active');
+
 });
 
 // габургер
 
 const hamburger = document.querySelector('.header__mobi__humburger'),
       menu = document.querySelector('.header__mobi__left'),
-      closeElem2 = document.querySelector('.menu__close');
+      closeElem2 = document.querySelector('.header__mobi__close2');
+      closeElem3 = document.querySelector('.header__mobi__close3');
+      closeElem4 = document.querySelector('.header__mobi__close4');
+      closeElem5 = document.querySelector('.header__mobi__close5');
+      closeElem6 = document.querySelector('.header__mobi__close6');
+      closeElem7 = document.querySelector('.header__mobi__close7');
+      closeElem8 = document.querySelector('.header__mobi__close8');
+
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('header__mobi__left__active');
+});
+    closeElem2.addEventListener('click', () => {
+      menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem3.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem4.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem5.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem6.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem7.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
+});
+
+closeElem8.addEventListener('click', () => {
+  menu.classList.remove('header__mobi__left__active');
 });
 
 // closeElem.addEventListener('click', () => {
@@ -86,4 +121,3 @@ for (let anchor of anchors) {
 //   }
 //   sliderWrapper.style.left = offset + 'px';
 // });
-

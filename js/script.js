@@ -103,21 +103,36 @@ for (let anchor of anchors) {
 
 // слайдер
 
-// let offset = 0;  //смещение от левого края  
-// const sliderWrapper = document.querySelector('.impossible__wrapper');
+let slideIndex = 1;
+slide(slideIndex);
 
-// document.querySelector('.impossible__next').addEventListener('click', function () {
-//   offset = offset + 170;
-//   if (offset > 340) {
-//     offset = 0;
-//   }
-//   sliderWrapper.style.left = offset + 'px';
-// });
+function nextSlide() {
+    slide(slideIndex += 1);
+}
 
-// document.querySelector('.impossible__prev').addEventListener('click', function () {
-//   offset = offset - 170;
-//   if (offset < 0) {
-//     offset = 340;
-//   }
-//   sliderWrapper.style.left = offset + 'px';
-// });
+function prevSlide() {
+    slide(slideIndex -= 1);  
+}
+
+function currentSlide(numeration) {
+    slide(slideIndex = numeration);
+}
+
+function slide(numeration) {
+    let circles = document.getElementsByClassName("circle");
+    let slides = document.getElementsByClassName("impossible__item");
+    if (numeration > slides.length) {
+      slideIndex = 1
+    }
+    if (numeration < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < circles.length; i++) {
+        circles[i].className = circles[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    circles[slideIndex - 1].className += " active";
+}

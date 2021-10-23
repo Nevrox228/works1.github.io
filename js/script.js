@@ -162,7 +162,7 @@ if (document.documentElement.clientWidth < 768) {
       
       function slide(numeration) {
           let circles = document.getElementsByClassName("circle");
-          let slides = document.getElementsByClassName("impossible__item");
+          let slides = document.getElementsByClassName(".impossible__item");
           if (numeration > slides.length) {
             slideIndex = 1
           }
@@ -179,4 +179,5 @@ if (document.documentElement.clientWidth < 768) {
           circles[slideIndex - 1].className += " active";
       }
 }
+
 

@@ -21,7 +21,6 @@ button__mini.addEventListener('click', () => {
 
 closeElem__mini.addEventListener('click', () => {
 	info__mini.classList.remove('info__mini__active');
-
 });
 
 // габургер

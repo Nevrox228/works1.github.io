@@ -89,8 +89,8 @@ for (let anchor of anchors) {
 
 $(document).ready(function () {
     $('.impossible__wrapper__2').slick({
-      prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.png alt="button-prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="img/next.png alt="button-next"></button>',      
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.png></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/next.png></button>',      
       autoPlaySpedd: 5000
     });
 });

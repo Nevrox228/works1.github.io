@@ -5268,9 +5268,6 @@ nav .rss-link {
     margin-bottom: 20px;
 }
 
-.table-comparison__mobile {
-    display: none;
-}
 
 .table-number {
     font-size: 14px;
@@ -5284,9 +5281,6 @@ nav .rss-link {
 }
 .table-number span {
     margin-left: -16px;
-}
-.table-picture {
-
 }
 .table-picture img {
     margin-top: 30px;
@@ -5395,51 +5389,38 @@ nav .rss-link {
     }
 }
 @media (max-width: 767px) {
-    .table-comparison__main {
-        height: auto;
-        /* border-radius: 10px;
-        border: 1px solid #0674E4;
-        margin-bottom: 20px; */
-    }
     .table-comparison {
-        /* display: flex;
-        justify-content: center; */
-        display: none;
+        position: relative;
+        margin: 0 auto;
     }
-    .table-comparison__mobile {
-        display: block;
-    }
-    /* .table-best {
+    .table-best {
         position: absolute;
         top: 0;
         left: 0%;
         margin-left: 50px;
-    } */
+    }
     .table-best span{
         margin-left: 0;
     }
-    .table-comparison tr {
-        all: none;
-        /* height: auto; */
-    }
-    /* .table-comparison tr:nth-child(3) {
-        height: 300px;
-
-    } */
-    /* .table-comparison tr:nth-child(2) {
-        height: 375px;
-
-    } */
-    .table-picture__img {
+    .table-picture {
         /* position: absolute;
         left: 50%;
         transform: translateX(-50%); */
         /* display: flex;
         justify-content: center; */
         margin: 0 auto;
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 80%;
+        margin-top: 25px;
         /* background-color:#0674e4; */
+    }
+    
+    .table-picture {
+        /* vertical-align: top; */
+    }
+    .table-picture img {
+        margin: 0 ;
     }
     /* .table-button { */
         /* position: absolute;
@@ -5466,6 +5447,7 @@ nav .rss-link {
         -o-transition: 0.25s;
         transition: 0.25s;
         margin-bottom: 25px;
+        margin-top: 15px;
     }
     
     /* .table-button a{
@@ -5476,8 +5458,9 @@ nav .rss-link {
     } */
 
     .table-comparison tr {
-        /* position: relative; */
+        position: relative;
         width: 80vw;
+        height: auto;
     }
     /* .table-pros {
         position: absolute;
@@ -5498,8 +5481,17 @@ nav .rss-link {
     /* .table-pros ul {
         margin-left: 0;
     } */
+    .table-pros {
+        padding-top: 25px;
+        height: auto;
+    }
+    .table-pros ul {
+        padding: 0;
+        margin: 0;
+    }
     .table-pros li {
         /* width: 330px; */
+        margin: 0;
         list-style-type: none;
         /* margin-left: -185px; */
     }
@@ -5524,14 +5516,6 @@ nav .rss-link {
         border: 1px solid #0674E4;
         margin-bottom: 20px;
     }
-    /* .table-picture {
-        vertical-align: top;
-    }
-    .table-picture img {
-        margin-top: 10px;
-        width: 156px;
-        height: 113px;
-    } */
     .table-best {
         vertical-align: top;
         text-align: left;

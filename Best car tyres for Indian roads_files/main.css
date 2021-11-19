@@ -5438,7 +5438,8 @@ nav .rss-link {
         height: auto;
     }
     .table-pros {
-        padding-top: 25px;
+        padding-left: 2%;
+        padding-top: 15px;
         height: auto;
     }
     .table-pros ul {
@@ -5477,7 +5478,7 @@ nav .rss-link {
         width: unset;
     }
     .table-name  {
-        padding: 10px 0;
+        padding: 10px 0 0 0;
         display: block;
         text-align: center;
     } 

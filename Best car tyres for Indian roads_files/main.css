@@ -5397,9 +5397,9 @@ nav .rss-link {
 @media (max-width: 767px) {
     .table-comparison__main {
         height: auto;
-        border-radius: 10px;
+        /* border-radius: 10px;
         border: 1px solid #0674E4;
-        margin-bottom: 20px;
+        margin-bottom: 20px; */
     }
     .table-comparison {
         /* display: flex;
@@ -5439,7 +5439,7 @@ nav .rss-link {
         margin: 0 auto;
         display: block;
         width: 80%;
-        background-color:#0674e4;
+        /* background-color:#0674e4; */
     }
     /* .table-button { */
         /* position: absolute;
@@ -5516,6 +5516,13 @@ nav .rss-link {
     }
     .table-number span {
         margin-left: 30px;
+    }
+
+    .table-number__main {
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #0674E4;
+        margin-bottom: 20px;
     }
     /* .table-picture {
         vertical-align: top;

@@ -1,0 +1,382 @@
+/* index.html  */
+
+header {    
+    background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
+    height: 100vh;
+}
+
+.egypt {
+    background: url('../img/bg/egypt.jpg') center center/cover no-repeat;
+}
+
+.turkish {
+    background: url('../img/bg/turkish_bg.jpg') center center/cover no-repeat;
+}
+
+.oae {
+    background: url('../img/bg/oae_bg.jpg') center center/cover no-repeat;
+}
+
+.italy {
+    background: url('../img/bg/italy.jpg') center center/cover no-repeat;
+}
+
+.title {    
+    color: #000;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.header__nav {
+    height: 90px;
+    background: rgba(0, 0, 0, 0.59);
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav__logo img {
+    width: 70px;
+}
+
+.header__nav__list {
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav__logo {
+    position: relative;
+    left: 0;
+    padding-right: 50px;
+}
+
+.header__nav__list ul{
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav__list li{
+    list-style-type: none;
+}
+
+.header__nav__list a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding-right: 48px;
+    text-decoration: none;
+}
+
+.header__main {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: 0.35em;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.country__div div{
+    width: 100%;
+    display: flex;
+}
+
+.country {
+    height: 100vh;
+}
+
+.country__img {
+    width: 33%;
+}
+
+.country__img a {
+    display: block;
+    width: 100%;
+}
+
+.country__img img {
+    width: 100%;
+}
+
+.country__img:hover{
+    transition: all;
+    transition: all 1s;
+    opacity: 0.6;
+}
+
+.important {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.important__descr {
+    padding-top: 45px;
+    font-size: 30px;
+    line-height: 47px;;
+}
+
+.sea {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.sea__descr {
+    display: flex;
+    justify-content: center;
+}
+
+.sea__descr ul {
+    padding-top: 40px;
+}
+
+.sea__descr li {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.sea__descr li img{
+    padding-right: 15px;
+}
+
+.footer__nav {
+    background: #000;
+    border-radius: 0;
+}
+
+.egypt__main {
+    padding-top: 40px;
+}
+
+.egypt__main__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.egypt__main__txt {
+    padding-right: 15px;
+    width: 45%;
+    font-size: 20px;
+    line-height: 120.5%;
+}
+
+.egypt__second__main {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.egypt__second__descr li {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 120.5%;
+}
+
+.egypt__second__descr {
+    padding-left: 10%;
+}
+
+.egypt__cities {
+    padding-top: 85px;
+}
+
+.egypt__cities__img {
+    width: 33%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.egypt__cities__img__1 {
+    background: url(../img/egypt/image\ 5.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.egypt__cities__img__2 {
+    background: url(../img/egypt/image\ 6.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.egypt__cities__img__3 {
+    background: url(../img/egypt/image\ 7.jpg) center center/cover no-repeat;
+}
+
+.egypt__cities__img__4 {
+    background: url(../img/egypt/image\ 8.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.egypt__cities__img__5 {
+    background: url(../img/egypt/image\ 12.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.egypt__cities__img__6 {
+    background: url(../img/egypt/image\ 10.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+}
+
+.egypt__cities__img a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;
+    padding: 105px 30px;
+}
+
+.egypt__cities__div {
+    display: flex;
+}
+
+.egypt__cities__title {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.egypt__galery {
+    padding-top: 60px;
+}
+
+.egypt__galery__title {
+    padding-bottom: 25px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color:#000;
+}
+
+.country__img img {
+    height: 100%;
+}
+
+.egypt__galety__block {
+    display: flex;
+}
+
+.egypt__grid {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.egypt__item {
+    border-top: 1px solid #000;
+}
+
+.egypt__item:nth-child(1) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(2) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(3) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(4) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(5) {    
+    border-top:0px solid #000;
+}
+
+.egypt__table__title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.egypt__frame {
+    display: flex;
+    justify-content: center;
+}
+
+.turkish__cities__img__1 {
+    background: url(../img/turkish/1.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.turkish__cities__img__2 {
+    background: url(../img/turkish/2.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.turkish__cities__img__3 {
+    background: url(../img/turkish/3.jpg) center center/cover no-repeat;
+}
+
+.turkish__cities__img__4 {
+    background: url(../img/turkish/4.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.turkish__cities__img__5 {
+    background: url(../img//turkish/5.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.turkish__cities__img__6 {
+    background: url(../img//turkish/6.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+}
+
+/* ////////////////////////////////////////////////// */
+
+.oae__cities__img__1 {
+    background: url(../img/oae/1.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.oae__cities__img__2 {
+    background: url(../img/oae/2.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+}
+
+.oae__cities__img__3 {
+    background: url(../img/oae/3.jpg) center center/cover no-repeat;
+}
+
+.oae__cities__img__4 {
+    background: url(../img/oae/4.jpg) center center/cover no-repeat;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.oae__cities__img__5 {
+    background: url(../img//oae/5.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.oae__cities__img__6 {
+    background: url(../img//oae/6.jpg) center center/cover no-repeat;
+    margin-top: 30px;
+}

@@ -251,3 +251,40 @@ header {
 .egypt__galety__block {
     display: flex;
 }
+
+.egypt__grid {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.egypt__item {
+    border-top: 1px solid #000;
+}
+
+.egypt__item:nth-child(1) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(2) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(3) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(4) {    
+    border-top:0px solid #000;
+}
+
+.egypt__item:nth-child(5) {    
+    border-top:0px solid #000;
+}
+
+.egypt__table__title {
+    font-size: 50px;
+    text-align: center;
+}

@@ -1,0 +1,81 @@
+.myself {
+    padding-top: 50px;
+    z-index: 10;
+    &__bg {
+        z-index: -1;
+        position: absolute;
+        display: block;
+        top: 2050px;
+        right: 0;
+        background: url('../img/background/second_bg.png') no-repeat;
+        background-position: top center;
+        height: 4250px;
+        width: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        z-index: 5;
+    }
+    &__image {
+        // padding-right: 80px;
+        flex: 635px;
+        &__bottom {
+            &__wrapper {                
+                line-height: 26px;
+                padding-top: 45px;
+                font-size: 15px;
+                color: #fff;
+            }
+        }
+    }
+    &__descr {
+        flex: 500px;
+        h2 {
+            font-size: 44px;
+            font-family: AvenirNextCyr;
+            font-weight: 800;
+            color: $txt;
+        }
+        &__education {
+            display: flex;
+            padding-top: 65px;
+            &__img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 102px;
+                // height: auto;
+                padding-right: 30px;
+            }
+            &__txt {
+                font-size: 20px;
+                div {
+                    padding-top: 20px;
+                    color: $txt;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $main-color;
+                }
+            }
+        }
+        &__item {
+            color: $txt;
+            padding-top: 70px;
+            font-size: 20px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__notes {
+        &__call {
+            padding-top: 150px;
+            &__descr {
+                color: #fff;
+            }
+        }
+    }
+}

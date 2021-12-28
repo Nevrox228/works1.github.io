@@ -1,0 +1,45 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/slik';
+
+* {
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // line-height: 26px;
+}
+
+.container {
+    width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+//это мы переворачиваем гравный блок
+.rotate {
+    border-radius: 30px;
+    background: #fff;
+    transform: rotate(45deg);
+    width: 150px;
+}
+
+//это мы возвращаем дочерний блок в нормальное состояние
+.unrotate {
+    transform: rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+}
+
+@import 'blocks/header';
+@import 'blocks/notes';
+@import 'blocks/call';
+@import 'blocks/myself';
+@import 'blocks/aim';
+@import 'blocks/situation';
+@import 'blocks/review';

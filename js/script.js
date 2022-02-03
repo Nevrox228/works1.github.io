@@ -5,10 +5,12 @@ const hamburger = document.querySelector('.header__top__burger'),
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('header__sidepanel__active');
+    // document.body.style.overflow = 'hidden';
 });
 
 closeElemSm.addEventListener('click', () => {
     closeElemSm.classList.toggle('header__close__sm__active');
+    // document.body.style.overflow = 'hidden';
     menu.classList.toggle('header__sidepanel__active');
 });
 

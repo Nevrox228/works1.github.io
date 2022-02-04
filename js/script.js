@@ -22,6 +22,30 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
     });
 
+
+//// show all
+
+        function closeElement() {
+            modal.classList.toggle('show');
+            document.body.style.overflow = '';
+        }
+    
+    const hidden = document.querySelector('.hidden'),
+          openElem = document.querySelector('.open');
+
+    function openForAll() {
+        openElem.addEventListener('click', () => {
+            hidden.classList.add('hidden__active');
+        });
+    }
+
+    
+	openElem.addEventListener('click', openForAll);
+
+    // openElem.addEventListener('click', () => {
+    //     hidden.classList.add('hidden__active');
+    // });
+
     ////search
     const searchIcon = document.querySelector('.header__top__search__input__img'),
           form = document.querySelector('.header__top__search__input'),
@@ -48,25 +72,60 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-    window.onload = function () {
-        var box = document.getElementsByClassName('street_style__item');
-        var btn = document.getElementById('button');
-        for (let i=4;i<box.length;i++) {
-            box[i].style.display = "none";
-        }
+    
 
-        var countD = 4;
-        btn.addEventListener("click", function() {
-            var box=document.getElementsByClassName('street_style__item');
-            countD += 4;
-            if (countD <= box.length){
-                for(let i=0;i<countD;i++){
-                    box[i].style.display = "block";
-                }
-            }
+    // window.onload = function () {
+    //     var box = document.getElementsByClassName('street_style__item');
+    //     var btn = document.getElementById('button');
+    //     for (let i=4;i<box.length;i++) {
+    //         box[i].style.display = "none";
+    //     }
 
-        })
-    }
+    //     var countD = 4;
+    //     btn.addEventListener("click", function() {
+    //         var box=document.getElementsByClassName('street_style__item');
+    //         countD += 4;
+    //         if (countD <= box.length){
+    //             for(let i=0;i<countD;i++){
+    //                 box[i].style.display = "block";
+    //             }
+    //         }
 
+    //     })
+    // }
+
+
+
+
+
+    // closeElemSm.addEventListener('click', () => {
+    //     closeElemSm.classList.toggle('header__close__sm__active');
+    //     menu.classList.toggle('header__sidepanel__active');
+    //     document.body.classList.toggle('hidden');
+    // });
+
+    // closeElem.addEventListener('click', () => {
+    //     menu.classList.remove('header__sidepanel__active');
+    // });
+
+
+    // const modalTrigger = document.querySelectorAll('[data-modal]'),
+	// 	  modal = document.querySelector('.modal'),
+    //       button = document.querySelectorAll('.open'),
+    //       hidden = document.querySelectorAll('.hidden'),
+	// 	  modalCloseBtn = document.querySelector('[data-close]');
+
+	// function openBlock() {
+	// 	hidden.classList.add('show');   //это самый легкий вариант и не самый правильный	
+	// }
+
+	// button.addEventListener('click', openBlock);
+
+
+	// modalTrigger.forEach(btn => {     //это уже правильней тут мы написали что для каждого эллемента с дата атрибутом мы даём такое дествоие 
+	// 	btn.addEventListener('click', openBlock);
+	// });
+    
+	// modalCloseBtn.addEventListener('click', closeElement);
 });
 

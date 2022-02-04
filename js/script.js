@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
     });
 
-
+    ////search
     const searchIcon = document.querySelector('.header__top__search__input__img'),
           form = document.querySelector('.header__top__search__input'),
           body = document.querySelector('.body'),
@@ -40,13 +40,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
     body.addEventListener('click', (e) => {
 		if (e.target === body) {
-            console.log('nkml');
         form.classList.remove('header__top__search__input__active');
         body.classList.remove('body__active');
         headerTopSocial.style.display = '';
         headerTopLogin.style.display = '';
 		}
 	});
+
+
+    window.onload = function () {
+        var box = document.getElementsByClassName('street_style__item');
+        var btn = document.getElementById('button');
+        for (let i=4;i<box.length;i++) {
+            box[i].style.display = "none";
+        }
+
+        var countD = 4;
+        btn.addEventListener("click", function() {
+            var box=document.getElementsByClassName('street_style__item');
+            countD += 4;
+            if (countD <= box.length){
+                for(let i=0;i<countD;i++){
+                    box[i].style.display = "block";
+                }
+            }
+
+        })
+    }
 
 });
 

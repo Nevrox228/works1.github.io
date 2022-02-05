@@ -24,27 +24,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 //// show all
+        const hiddenStreet = document.querySelector('.hidden_btn_street'),
+              hiddenTrends = document.querySelector('.hidden_btn_trends'), 
+              hiddenCelebrity = document.querySelector('.hidden_btn_celebrity'),           
+              openElem = document.querySelector('.open'),  
+              openElem1 = document.querySelector('.open1'),
+              openElem2 = document.querySelector('.open2');    
 
-        function closeElement() {
-            modal.classList.toggle('show');
-            document.body.style.overflow = '';
+        function openForStreet() {            
+            hiddenStreet.classList.add('show');
+        }   
+
+        function openForTrends() {            
+            hiddenTrends.classList.add('show');
         }
-    
-    const hidden = document.querySelector('.hidden'),
-          openElem = document.querySelector('.open');
 
-    function openForAll() {
-        openElem.addEventListener('click', () => {
-            hidden.classList.add('hidden__active');
-        });
-    }
+        function openForCelebrity() {            
+            hiddenCelebrity.classList.add('show');
+        }
 
-    
-	openElem.addEventListener('click', openForAll);
+        openElem.addEventListener('click', openForStreet);
+        openElem1.addEventListener('click', openForTrends);
+        openElem2.addEventListener('click', openForCelebrity);
 
-    // openElem.addEventListener('click', () => {
-    //     hidden.classList.add('hidden__active');
-    // });
 
     ////search
     const searchIcon = document.querySelector('.header__top__search__input__img'),

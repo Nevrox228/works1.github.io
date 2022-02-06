@@ -50,6 +50,26 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 
+    const heart = document.querySelector('.articles__item__right__svg__1'),
+          heart1 = document.querySelector('.articles__item__right__svg__2'),
+          heart2 = document.querySelector('.articles__item__right__svg__3');
+        
+
+    heart.addEventListener('click', () =>  {
+        heart.classList.toggle('articles__item__right__svg__active');
+    });
+
+    heart1.addEventListener('click', () =>  {
+        heart1.classList.toggle('articles__item__right__svg__active');
+    });
+
+    heart2.addEventListener('click', () =>  {
+        heart2.classList.toggle('articles__item__right__svg__active');
+    });
+
+
+
+
      //// show all
      const hiddenStreet = document.querySelector('.hidden_btn_street'),
      hiddenTrends = document.querySelector('.hidden_btn_trends'), 
@@ -76,14 +96,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     ////heart
-
-    const heart = document.querySelector('.articles__item__right__svg');
-        
-
-    heart.addEventListener('click', () =>  {
-        heart.classList.toggle('articles__item__right__svg__active');
-    });
-
 
     // function heartActive () {  //имя функции
 	// 	// tabsContent.forEach(item => {   //для всех tabcontent пишем стиль display none 

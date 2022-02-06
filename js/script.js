@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
         form.classList.toggle('header__top__search__input__active');
         body.classList.toggle('body__active');
         headerTopSocial.classList.toggle('hidden__btn');
-        headerTopLogin.classList.toggle('hidden__btn');
+        headerTopLogin.classList.toggle('hidden__btn');        
+        searchIcon.classList.toggle('header__top__search__input__img__active');
     });
 
     body.addEventListener('click', (e) => {
@@ -48,115 +49,56 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-//// show all
-        const hiddenStreet = document.querySelector('.hidden_btn_street'),
-              hiddenTrends = document.querySelector('.hidden_btn_trends'), 
-              hiddenCelebrity = document.querySelector('.hidden_btn_celebrity'),           
-              openElem = document.querySelector('.open'),  
-              openElem1 = document.querySelector('.open1'),
-              openElem2 = document.querySelector('.open2');    
 
-        function openForStreet() {            
-            hiddenStreet.classList.add('show');
-        }   
+     //// show all
+     const hiddenStreet = document.querySelector('.hidden_btn_street'),
+     hiddenTrends = document.querySelector('.hidden_btn_trends'), 
+     hiddenCelebrity = document.querySelector('.hidden_btn_celebrity'),           
+     openElem = document.querySelector('.open'),  
+     openElem1 = document.querySelector('.open1'),
+     openElem2 = document.querySelector('.open2');    
 
-        function openForTrends() {            
-            hiddenTrends.classList.add('show');
-        }
+    function openForStreet() {            
+    hiddenStreet.classList.add('show');
+    }   
 
-        function openForCelebrity() {            
-            hiddenCelebrity.classList.add('show');
-        }
+    function openForTrends() {            
+    hiddenTrends.classList.add('show');
+    }
 
-        openElem.addEventListener('click', openForStreet);
-        openElem1.addEventListener('click', openForTrends);
-        openElem2.addEventListener('click', openForCelebrity);
+    function openForCelebrity() {            
+    hiddenCelebrity.classList.add('show');
+    }
 
+    openElem.addEventListener('click', openForStreet);
+    openElem1.addEventListener('click', openForTrends);
+    openElem2.addEventListener('click', openForCelebrity);
+
+
+    ////heart
+
+    const heart = document.querySelector('.articles__item__right__svg');
+        
+
+    heart.addEventListener('click', () =>  {
+        heart.classList.toggle('articles__item__right__svg__active');
+    });
+
+
+    // function heartActive () {  //имя функции
+	// 	// tabsContent.forEach(item => {   //для всех tabcontent пишем стиль display none 
+	// 	// 	item.style.display = 'none';
+	// 	// });
+
+	// 	heart.forEach(heart => {  //для всех tabs удаляем класс активности
+	// 		heart.classList.toggle('articles__item__right__svg__active');
+	// 	});
+	// }
+    
+
+    // heartActive();
 
    
-    
-
-
-
-  //pagination
-
-
-  //   const ulTag = document.querySelector("ul");
-
-  //   function element(totalPages, page){
-  //     let liTag = '';  //все наши теги Li
-  //     let beforePage = page - 1;
-  //     let afterPage = page + 1;
-
-  //     for (let pageLenght = beforePage; pageLenght <= afterPage; pageLenght) {
-  //         liTag += `<li class="numb active"><span>1</span></li>`;
-  //     }
-
-  //     if(page >  1) { //если значение страницы больше 1, то показать предыдущую кнопку
-  //         liTag += `<li class="btn prev"><span><i class="fas fs-angle-left">Prev</i></span></li>`;
-  //     }
-  //     if(page <  totalPages) { //если значение страницы больше 1, то показать предыдущую кнопку
-  //       liTag += `<li class="btn next"><span>Next<i class="fas fs-angle-right"></i></span></li>`;
-  //   }
-  //     ulTag.innerHTML = liTag;
-  // }
-  //   element(20, 5); //вызов вышеуказанной функции с передачей значений
-
-    // window.onload = function () {
-    //     var box = document.getElementsByClassName('street_style__item');
-    //     var btn = document.getElementById('button');
-    //     for (let i=4;i<box.length;i++) {
-    //         box[i].style.display = "none";
-    //     }
-
-    //     var countD = 4;
-    //     btn.addEventListener("click", function() {
-    //         var box=document.getElementsByClassName('street_style__item');
-    //         countD += 4;
-    //         if (countD <= box.length){
-    //             for(let i=0;i<countD;i++){
-    //                 box[i].style.display = "block";
-    //             }
-    //         }
-
-    //     })
-    // }
-
-
-
-
-
-    // closeElemSm.addEventListener('click', () => {
-    //     closeElemSm.classList.toggle('header__close__sm__active');
-    //     menu.classList.toggle('header__sidepanel__active');
-    //     document.body.classList.toggle('hidden');
-    // });
-
-    // closeElem.addEventListener('click', () => {
-    //     menu.classList.remove('header__sidepanel__active');
-    // });
-
-
-    // const modalTrigger = document.querySelectorAll('[data-modal]'),
-	// 	  modal = document.querySelector('.modal'),
-    //       button = document.querySelectorAll('.open'),
-    //       hidden = document.querySelectorAll('.hidden'),
-	// 	  modalCloseBtn = document.querySelector('[data-close]');
-
-	// function openBlock() {
-	// 	hidden.classList.add('show');   //это самый легкий вариант и не самый правильный	
-	// }
-
-	// button.addEventListener('click', openBlock);
-
-
-	// modalTrigger.forEach(btn => {     //это уже правильней тут мы написали что для каждого эллемента с дата атрибутом мы даём такое дествоие 
-	// 	btn.addEventListener('click', openBlock);
-	// });
-    
-	// modalCloseBtn.addEventListener('click', closeElement);
-
-
-
+        
 });
 

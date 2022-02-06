@@ -22,15 +22,12 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
     });
 
-
+   ////search
     const searchIcon = document.querySelector('.header__top__search__input__img'),
           form = document.querySelector('.header__top__search__input'),
           body = document.querySelector('.body'),
           headerTopSocial = document.querySelector('.header__top__social'),
-          headerTopLogin = document.querySelector('.header__top__login');
-
-          
-     ////search
+          headerTopLogin = document.querySelector('.header__top__login');   
 
     searchIcon.addEventListener('click', () => {
         form.classList.toggle('header__top__search__input__active');
@@ -49,53 +46,51 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+        // ////heart
 
-    const heart = document.querySelector('.articles__item__right__svg__1'),
-          heart1 = document.querySelector('.articles__item__right__svg__2'),
-          heart2 = document.querySelector('.articles__item__right__svg__3');
-        
-
-    heart.addEventListener('click', () =>  {
-        heart.classList.toggle('articles__item__right__svg__active');
-    });
-
-    heart1.addEventListener('click', () =>  {
-        heart1.classList.toggle('articles__item__right__svg__active');
-    });
-
-    heart2.addEventListener('click', () =>  {
-        heart2.classList.toggle('articles__item__right__svg__active');
-    });
+        // const heart = document.querySelector('.articles__item__right__svg__1'),
+        // heart1 = document.querySelector('.articles__item__right__svg__2'),
+        // heart2 = document.querySelector('.articles__item__right__svg__3');
 
 
+        // heart.addEventListener('click', () =>  {
+        // heart.classList.toggle('articles__item__right__svg__active');
+        // });
 
+        // heart1.addEventListener('click', () =>  {
+        // heart1.classList.toggle('articles__item__right__svg__active');
+        // });
+
+        // heart2.addEventListener('click', () =>  {
+        // heart2.classList.toggle('articles__item__right__svg__active');
+        // });
 
      //// show all
-     const hiddenStreet = document.querySelector('.hidden_btn_street'),
-     hiddenTrends = document.querySelector('.hidden_btn_trends'), 
-     hiddenCelebrity = document.querySelector('.hidden_btn_celebrity'),           
-     openElem = document.querySelector('.open'),  
-     openElem1 = document.querySelector('.open1'),
-     openElem2 = document.querySelector('.open2');    
+    //  const hiddenStreet = document.querySelector('.hidden_btn_street'),
+    //  hiddenTrends = document.querySelector('.hidden_btn_trends'), 
+    //  hiddenCelebrity = document.querySelector('.hidden_btn_celebrity'),           
+    //  openElem = document.querySelector('.open'),  
+    //  openElem1 = document.querySelector('.open1'),
+    //  openElem2 = document.querySelector('.open2');    
+     
 
-    function openForStreet() {            
-    hiddenStreet.classList.add('show');
-    }   
+    // function openForStreet() {            
+    // hiddenStreet.classList.add('show');
+    // }   
 
-    function openForTrends() {            
-    hiddenTrends.classList.add('show');
-    }
+    // function openForTrends() {            
+    // hiddenTrends.classList.add('show');
+    // }
 
-    function openForCelebrity() {            
-    hiddenCelebrity.classList.add('show');
-    }
+    // function openForCelebrity() {            
+    // hiddenCelebrity.classList.add('show');
+    // }
 
-    openElem.addEventListener('click', openForStreet);
-    openElem1.addEventListener('click', openForTrends);
-    openElem2.addEventListener('click', openForCelebrity);
+    // openElem.addEventListener('click', openForStreet);
+    // openElem1.addEventListener('click', openForTrends);
+    // openElem2.addEventListener('click', openForCelebrity);
 
 
-    ////heart
 
     // function heartActive () {  //имя функции
 	// 	// tabsContent.forEach(item => {   //для всех tabcontent пишем стиль display none 

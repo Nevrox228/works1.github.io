@@ -23,6 +23,31 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    const searchIcon = document.querySelector('.header__top__search__input__img'),
+          form = document.querySelector('.header__top__search__input'),
+          body = document.querySelector('.body'),
+          headerTopSocial = document.querySelector('.header__top__social'),
+          headerTopLogin = document.querySelector('.header__top__login');
+
+          
+     ////search
+
+    searchIcon.addEventListener('click', () => {
+        form.classList.toggle('header__top__search__input__active');
+        body.classList.toggle('body__active');
+        headerTopSocial.classList.toggle('hidden__btn');
+        headerTopLogin.classList.toggle('hidden__btn');
+    });
+
+    body.addEventListener('click', (e) => {
+		if (e.target === body) {
+        form.classList.remove('header__top__search__input__active');
+        body.classList.remove('body__active');
+        headerTopSocial.classList.toggle('hidden__btn');
+        headerTopLogin.classList.toggle('hidden__btn');
+		}
+	});
+
 //// show all
         const hiddenStreet = document.querySelector('.hidden_btn_street'),
               hiddenTrends = document.querySelector('.hidden_btn_trends'), 
@@ -48,30 +73,8 @@ window.addEventListener('DOMContentLoaded', () => {
         openElem2.addEventListener('click', openForCelebrity);
 
 
-    ////search
-    const searchIcon = document.querySelector('.header__top__search__input__img'),
-          form = document.querySelector('.header__top__search__input'),
-          body = document.querySelector('.body'),
-          headerTopSocial = document.querySelector('.header__top__social'),
-          headerTopLogin = document.querySelector('.header__top__login');
-
-          
-    searchIcon.addEventListener('click', () => {
-        form.classList.toggle('header__top__search__input__active');
-        body.classList.add('body__active');
-        headerTopSocial.style.display = 'none';
-        headerTopLogin.style.display = 'none';
-    });
-
-
-    body.addEventListener('click', (e) => {
-		if (e.target === body) {
-        form.classList.remove('header__top__search__input__active');
-        body.classList.remove('body__active');
-        headerTopSocial.style.display = '';
-        headerTopLogin.style.display = '';
-		}
-	});
+   
+    
 
 
 

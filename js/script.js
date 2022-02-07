@@ -43,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
         body.classList.remove('body__active');
         headerTopSocial.classList.toggle('hidden__top');
         headerTopLogin.classList.toggle('hidden__top');
+        searchIcon.classList.toggle('header__top__search__input__img__active');
 		}
 	});
 

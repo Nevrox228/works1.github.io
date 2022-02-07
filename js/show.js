@@ -9,17 +9,17 @@ const hiddenStreet = document.querySelector('.hidden_btn_street'),
 
 
 function openForStreet() {            
-    hiddenStreet.classList.toggle('show');
+    hiddenStreet.classList.add('show');
     openElem.classList.add('beauty__btn__active');
 }   
 
 function openForTrends() {            
-    hiddenTrends.classList.toggle('show');
+    hiddenTrends.classList.add('show');
     openElem1.classList.add('beauty__btn__active');
 }
 
 function openForCelebrity() {            
-    hiddenCelebrity.classList.toggle('show');
+    hiddenCelebrity.classList.add('show');
     openElem2.classList.add('beauty__btn__active');
 }
 

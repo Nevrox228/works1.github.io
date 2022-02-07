@@ -32,8 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
     searchIcon.addEventListener('click', () => {
         form.classList.toggle('header__top__search__input__active');
         body.classList.toggle('body__active');
-        headerTopSocial.classList.toggle('hidden__btn');
-        headerTopLogin.classList.toggle('hidden__btn');        
+        headerTopSocial.classList.toggle('hidden__top');
+        headerTopLogin.classList.toggle('hidden__top');        
         searchIcon.classList.toggle('header__top__search__input__img__active');
     });
 
@@ -41,8 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		if (e.target === body) {
         form.classList.remove('header__top__search__input__active');
         body.classList.remove('body__active');
-        headerTopSocial.classList.toggle('hidden__btn');
-        headerTopLogin.classList.toggle('hidden__btn');
+        headerTopSocial.classList.toggle('hidden__top');
+        headerTopLogin.classList.toggle('hidden__top');
 		}
 	});
 

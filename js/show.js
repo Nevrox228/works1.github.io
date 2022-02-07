@@ -14,12 +14,12 @@ function openForStreet() {
 }   
 
 function openForTrends() {            
-    hiddenTrends.classList.add('show');
+    hiddenTrends.classList.toggle('show');
     openElem1.classList.add('beauty__btn__active');
 }
 
 function openForCelebrity() {            
-    hiddenCelebrity.classList.add('show');
+    hiddenCelebrity.classList.toggle('show');
     openElem2.classList.add('beauty__btn__active');
 }
 
